@@ -77,7 +77,7 @@ export default function Keyboard() {
             },
             {
               title: 'Your theme, live',
-              body: 'One colors.toml in the Quickshell format — from matugen, pywal or a script of your own — and it follows along.',
+              body: 'One desktop colors.toml file — from matugen, pywal or a script of your own — and the interface follows along.',
             },
           ].map((c) => (
             <div key={c.title}>

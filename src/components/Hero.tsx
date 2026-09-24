@@ -3,9 +3,9 @@ import ThemeToggle from './ThemeToggle'
 import { useTheme } from '../context/ThemeContext'
 
 // Two lines, not one: the installer ships a prebuilt binary, so the runtime
-// deps have to come first or `gambito open` finds no Quickshell. Rust is not
+// deps have to come first or the installed Qt host cannot start. Rust is not
 // among them -- that is only for building from source.
-const DEPS = 'sudo pacman -S --needed quickshell stockfish ttf-dejavu libnotify'
+const DEPS = 'sudo pacman -S --needed cmake qt6-base qt6-declarative stockfish ttf-dejavu libnotify'
 const INSTALL = 'curl -fsSL https://raw.githubusercontent.com/harbefas/gambito/master/scripts/install.sh | sh'
 const BOTH = `${DEPS}\n${INSTALL}`
 
@@ -50,7 +50,7 @@ export default function Hero() {
       </p>
 
       <p className="max-w-xl text-sm mb-8 relative z-10" style={{ color: theme.comment }}>
-        Rust daemon · Quickshell UI · Stockfish analysis. Every action has a key, every window
+        Rust daemon · Qt Quick UI · Stockfish analysis. Every action has a key, every window
         tiles, and the games keep running when you close them.
       </p>
 
@@ -67,7 +67,7 @@ export default function Hero() {
           style={{ borderBottom: `1px solid ${theme.bg}` }}
         >
           <span className="font-mono text-xs" style={{ color: theme.comment }}>
-            Arch, including any Quickshell setup
+            Arch Linux with Qt 6
           </span>
           <button
             onClick={copy}

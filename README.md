@@ -26,8 +26,8 @@ Screenshots live in `public/` and their grouping and captions in
 generated here; re-copy them when the UI changes, or the page starts lying.
 
 The install commands in `src/components/Hero.tsx` are two lines on purpose:
-`scripts/install.sh` ships a prebuilt binary, so the runtime dependencies have
-to be installed first or `gambito open` finds no Quickshell.
+`scripts/install.sh` ships prebuilt Gambito and Qt host binaries, so the Qt 6
+runtime dependencies have to be installed first.
 
 ## Deploy
 
