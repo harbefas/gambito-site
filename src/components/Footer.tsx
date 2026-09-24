@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs" style={{ color: theme.comment }}>
           <span>Gambito</span>
           <span>&middot;</span>
-          <span>MIT licensed</span>
+          <span>GPL-3.0-or-later</span>
           <span>&middot;</span>
           <span>Not affiliated with Lichess</span>
         </div>
